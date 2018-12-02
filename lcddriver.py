@@ -6,7 +6,7 @@ from time import sleep
 ADDRESS = 0x27
 
 # I2C bus
-BUS = 5
+BUS = 2
 
 # commands
 LCD_CLEARDISPLAY = 0x01
