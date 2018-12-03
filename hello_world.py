@@ -47,9 +47,9 @@ while True:
   tx2 = get_bytes('tx')
   rx2 = get_bytes('rx')
 
-  tx_speed = round((tx2 - tx1)/1000000.0)
-  rx_speed = round((rx2 - rx1)/1000000.0)
+  tx_speed = (tx2 - tx1)/1000000.0
+  rx_speed = (rx2 - rx1)/1000000.0
 
-  lcd.display_string("TX: "+str(tx_speed*8).zfill(3)+" RX: "+str(rx_speed*8).zfill(3)+" mbps", 3)
+  lcd.display_string("TX: "+str(round(tx_speed*8)).zfill(3)+" RX: "+str(round(rx_speed*8)).zfill(3)+" mbps", 3)
   lcd.display_string("TEMP:"+os.popen('sensors | grep "temp1:" | cut -d+ -f2 | cut -c1-2').read()[:-1]+"C "+dateString+" "+timeString, 4)
 #  sleep(1)
