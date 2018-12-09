@@ -21,6 +21,14 @@ lcd = lcd.lcd()
 # get hostname
 #hostname=str(os.popen('hostname').readline())[:-1]
 
+lcd.display_string("####################",1)
+lcd.display_string("WELCOME TO ODROID H2",2)
+lcd.display_string("LCD SERVICE STARTED.",3)
+lcd.display_string("####################",4)
+
+
+sleep(10)
+
 
 
 while True:

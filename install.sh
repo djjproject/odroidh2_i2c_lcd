@@ -48,6 +48,7 @@ sed -i -e "s/BUS = 2/BUS = $PORT/g" /home/odroidlcd/lcddriver.py
 echo "# install init.d script.."
 sleep 3
 cp /home/odroidlcd/odroidlcd.sh /etc/init.d/odroidlcd
+chmod a+x /home/odroidlcd/run.sh
 chmod a+x /etc/init.d/odroidlcd
 update-rc.d odroidlcd defaults
 
