@@ -64,7 +64,7 @@ while True:
 
   # line 3 print (network speed)
   # bps -> mpbs (*8)
-  lcd.display_string("TX: "+str(round(tx_speed*8)).zfill(3)+" RX: "+str(round(rx_speed*8)).zfill(3)+" mbps", 3)
+  lcd.display_string("TX: "+str(round(tx_speed*8)).zfill(3)+" RX: "+str(round(rx_speed*8)).zfill(3)+" Mbps", 3)
 
   # line 4 print (cputemp, date, time)
   # use lm-sensors to get cpu temp / get time data from python internal method
