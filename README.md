@@ -1,20 +1,20 @@
 # i2c_20x4_lcd forked from odroidh2 git hub (ver 0.000001)
 
 ## Depends
-i2c-tools git python3-dev libi2c-dev python3-smbus python3-psutil lm-sensors hdparm
+- i2c-tools git python3-dev libi2c-dev python3-smbus python3-psutil lm-sensors hdparm
 
 ## How to run?
-nohup python3 hello_world.py &
+- nohup python3 hello_world.py &
 
 ## How to setup? 
-chmod a+x install.sh
-./install.sh
-(automatically install depencies and activate i2c-dev module)
+- chmod a+x install.sh
+- ./install.sh
+- (automatically install depencies and activate i2c-dev module)
 
 ## How to use service?
-service odroidlcd stop
-service odroidlcd start
-service odroidlcd restart
+- service odroidlcd stop
+- service odroidlcd start
+- service odroidlcd restart
 
 ## Examples
 ![Alt text](https://t1.daumcdn.net/cfile/tistory/997F52475C041C7203)
