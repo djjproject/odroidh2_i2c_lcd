@@ -39,7 +39,7 @@ i2cdetect -y -r 7
 echo "# i2c port 8.."
 i2cdetect -y -r 8
 
-echo -e "# find address 27 and enter port number : \c"
+echo -e '# find address 27 and enter port number : \c'
 read PORT
 echo "# edit i2c port number.."
 sleep 5
